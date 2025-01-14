@@ -17,8 +17,8 @@ class w2_4_ReadWriteFile
         // Don't use absolute path. Use only path relative to src
         // Use forward slash (/) instead of backward slash (\)
         String path        = "src/main/Java/Lab_Ch2/";
-	String inFilename  = path + "input.txt";
-	String outFilename = path + "output.txt";
+	    String inFilename  = path + "input.txt";
+	    String outFilename = path + "output.txt";
         //String outFilename = "output2.txt";             // file is place outside src
         
 	try 
@@ -30,9 +30,9 @@ class w2_4_ReadWriteFile
           
             
             File outFile      = new File(outFilename);
-            PrintWriter write = new PrintWriter(outFile);                              // overwrite (default)
+            //PrintWriter write = new PrintWriter(outFile);                              // overwrite (default)
             //PrintWriter write = new PrintWriter( new FileWriter(outFile, false) );   // overwrite
-            //PrintWriter write = new PrintWriter( new FileWriter(outFile, true)  );   // append
+            PrintWriter write = new PrintWriter( new FileWriter(outFile, true)  );   // append
             write.println("test");
             while (fileScan.hasNext()) 
             {							
@@ -56,7 +56,7 @@ class w2_4_ReadWriteFile
 	catch(Exception e) {
             System.err.println("An error occurs. End program.");
             System.err.println(e);	  
-            //System.exit(-1);
+            System.exit(-1); // This terminate the program
 	}
     }
 }
