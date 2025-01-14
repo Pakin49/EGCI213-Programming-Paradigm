@@ -66,6 +66,8 @@ class w3_1_Array
         /*
         // arrow-case doesn't require break at the end
         // cases on RHS are separated by comma, LHS = an instruction or a block of code
+
+        //using arrow (->) instead of colon (:)
         switch(test)
         {
             case "Saturday", "Sunday" -> System.out.printf("\n%s is weekend \n", test); 
