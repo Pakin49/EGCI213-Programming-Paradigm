@@ -30,9 +30,9 @@ class w2_4_ReadWriteFile
           
             
             File outFile      = new File(outFilename);
-            //PrintWriter write = new PrintWriter(outFile);                              // overwrite (default)
+            PrintWriter write = new PrintWriter(outFile);                              // overwrite (default)
             //PrintWriter write = new PrintWriter( new FileWriter(outFile, false) );   // overwrite
-            PrintWriter write = new PrintWriter( new FileWriter(outFile, true)  );   // append
+            //PrintWriter write = new PrintWriter( new FileWriter(outFile, true)  );   // append
             write.println("test");
             while (fileScan.hasNext()) 
             {							
@@ -52,11 +52,11 @@ class w2_4_ReadWriteFile
             {
                 if (outFile.exists()) outFile.delete();
             }
-	}
+}
 	catch(Exception e) {
             System.err.println("An error occurs. End program.");
             System.err.println(e);	  
             System.exit(-1); // This terminate the program
-	}
+	    }
     }
 }
