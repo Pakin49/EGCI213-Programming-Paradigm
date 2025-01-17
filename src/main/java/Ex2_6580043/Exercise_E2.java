@@ -1,3 +1,4 @@
+// Pakin Panawattanakul 6580043
 package Ex2_6580043;
 
 import java.io.*;
@@ -29,7 +30,7 @@ public class Exercise_E2 {
             System.out.println("Write output "+outputPath);
 
             //Print header for output file
-            filePrint.printf("Platform        MAU(thousands)     YAU(billions)    >%,d millions\r\n",MAUThreshold);
+            filePrint.printf("Platform        MAU(thousands)     MAU(billions)    >%,d millions\r\n",MAUThreshold);
             for(int i=0;i<67;i++){filePrint.print('=');}
             filePrint.printf("\r\n");
 

@@ -1,4 +1,4 @@
-Platform        MAU(thousands)     YAU(billions)    >1,050 millions
+Platform        MAU(thousands)     MAU(billions)    >1,050 millions
 ===================================================================
 Discord             150,000            0.150             no
 Douyin              755,000            0.755             no
