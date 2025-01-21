@@ -24,7 +24,9 @@ class Alien2
 
     // ----- (1) Object constructors - constructor chain
     private Alien2()				{ System.out.print("Alien "); }
+    // java compiler will automatically add super();
     public Alien2(String n)			{ this(); name = n; System.out.println(name);}
+    // calling constructor like creating method without creating object
 
     // ----- (2) static & non-static members
     public String getName()                     { return name; }
@@ -42,9 +44,11 @@ class Alien2
 };
 
 /////////////////////////////////////////////////////////////////////////////////////////////
-class w4_2_Members
+class w4_2_Members // java auto add => class w4_2_Members extends jva.lang.Object
 {
-    public static void main(String[] args) 
+    // auto add
+    public w4_2_Members() {super();} // this is auto add
+    public static void main(String[] args)
     {
         System.out.println("========== Program start ==========");
         String names[] = {"A", "B", "C", "D", "E", "F"};
