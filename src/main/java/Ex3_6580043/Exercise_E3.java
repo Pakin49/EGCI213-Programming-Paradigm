@@ -1,7 +1,6 @@
 package Ex3_6580043;
 
 //Import library
-
 import java.util.*;
 import java.io.*;
 import java.util.stream.*;
@@ -74,7 +73,6 @@ public class Exercise_E3 {
         }
     }
 }
-
 
 class Player {
     public static final int CURRENT_YEAR = 2025;
