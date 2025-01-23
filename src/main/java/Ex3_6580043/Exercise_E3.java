@@ -111,14 +111,14 @@ class FootballPlayer extends Player{
 
     @Override
     public void printPersonalData(){
-        System.out.printf("%-25s born %4d    age = %d\r\n",super.getName(),super.birthyear,super.age);
+        System.out.printf("%-25s born %4d    age = %d\n",super.getName(),super.birthyear,super.age);
     }
     @Override
     public void printStat(){
         int total_games = IntStream.of(this.games).sum();
         int total_goals = IntStream.of(this.goals).sum();
         double goal_per_game = (double)total_goals/total_games;
-        System.out.printf("%-25s total games = %3d    total goals = %3d (%1.2f per game)     last season goals =%3d\r\n",super.getName(),total_games,total_goals,goal_per_game,goals[2]);
+        System.out.printf("%-25s total games = %3d    total goals = %3d (%1.2f per game)     last season goals =%3d\n",super.getName(),total_games,total_goals,goal_per_game,goals[2]);
     }
 }
 
@@ -142,10 +142,10 @@ class BasketballPlayer extends Player{
 
     @Override
     public void printPersonalData() {
-        System.out.printf("%-25s born %4d    age = %d\r\n",super.getName(),super.birthyear,super.age);
+        System.out.printf("%-25s born %4d    age = %d\n",super.getName(),super.birthyear,super.age);
     }
     @Override
     public void printStat(){
-        System.out.printf("%-25s total games = %3d    total mins = %4d (%2.2f per game)    total points = %4d (%2.2f per game)\r\n",super.getName(),this.total_games,this.total_mins,this.avg_mins,this.total_pts,this.avg_pts);
+        System.out.printf("%-25s total games = %3d    total mins = %4d (%2.2f per game)    total points = %4d (%2.2f per game)\n",super.getName(),this.total_games,this.total_mins,this.avg_mins,this.total_pts,this.avg_pts);
     }
 }
