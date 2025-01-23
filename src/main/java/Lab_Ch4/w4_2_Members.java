@@ -44,7 +44,7 @@ class Alien2
 };
 
 /////////////////////////////////////////////////////////////////////////////////////////////
-class w4_2_Members // java auto add => class w4_2_Members extends jva.lang.Object
+class w4_2_Members // java auto add => class w4_2_Members exten jva.lang.Object
 {
     // auto add
     public w4_2_Members() {super();} // this is auto add

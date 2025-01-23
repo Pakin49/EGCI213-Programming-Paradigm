@@ -66,10 +66,12 @@ class w4_1_CreateObject
         Object any;
         System.out.println("\n\n--- Check object's type ---");
         any = Will;
+
+        // this check  if pointer any point to class man1
         if (any instanceof Man1) System.out.println("Man1 instance");
         else                     System.out.println("Not Man1 instance");
 
-        System.out.println(any.getClass().getName());
+        System.out.println(any.getClass().getName()); //have to specify path
         if (any.getClass().getName().equals("Lab_Ch4.Man1")) System.out.println("Class Man1 ");
         else                                                 System.out.println("Not class Man1");		
     }
