@@ -27,8 +27,7 @@ class w2_4_ReadWriteFile
             Scanner fileScan = new Scanner(inFile); 
             System.out.println("Read input from (relative path) " + inFile.getPath());
             System.out.println("Read input from (absolute path) " + inFile.getAbsolutePath() + "\n");
-          
-            
+
             File outFile      = new File(outFilename);
             PrintWriter write = new PrintWriter(outFile);                              // overwrite (default)
             //PrintWriter write = new PrintWriter( new FileWriter(outFile, false) );   // overwrite
