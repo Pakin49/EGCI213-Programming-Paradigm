@@ -20,7 +20,6 @@ public class Exercise_E3 {
                 String line = fileScan.nextLine();
 
                 String [] cols = line.split(",");
-                String type = cols[0];
                 String name = cols[1];
                 int year = Integer.parseInt( cols[2].trim());
 
@@ -77,11 +76,16 @@ public class Exercise_E3 {
 class Player {
     public static final int CURRENT_YEAR = 2025;
     private String name;
-    protected int birthyear, age;
+    protected int birthyear;
+    protected int age;
 
     // Constructor
     public Player(){ }
-    public Player(String nm, int by) { name = nm; birthyear = by; }
+    public Player(String nm, int by) {
+        this.name = nm;
+        this.birthyear = by;
+        this.age = Player.CURRENT_YEAR - this.birthyear;
+    }
 
     public String getName() { return name; }
     public void printPersonalData() { /* override this in child class */ }
@@ -107,7 +111,7 @@ class FootballPlayer extends Player{
 
     @Override
     public void printPersonalData(){
-        System.out.printf("%-25s born %4d    age = %d\r\n",super.getName(),super.birthyear,Player.CURRENT_YEAR-super.birthyear);
+        System.out.printf("%-25s born %4d    age = %d\r\n",super.getName(),super.birthyear,super.age);
     }
     @Override
     public void printStat(){
@@ -138,7 +142,7 @@ class BasketballPlayer extends Player{
 
     @Override
     public void printPersonalData() {
-        System.out.printf("%-25s born %4d    age = %d\r\n",super.getName(),super.birthyear,Player.CURRENT_YEAR-super.birthyear);
+        System.out.printf("%-25s born %4d    age = %d\r\n",super.getName(),super.birthyear,super.age);
     }
     @Override
     public void printStat(){
