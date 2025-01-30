@@ -22,7 +22,7 @@ class MyInputReader
         int numerator, divisor, result = 0;
         try
         {
-            String []buf = line.split("\\s+");         // split by one or more spaces
+            String []buf = line.split("\\s+"); // split by one or more spaces
             numerator = Integer.parseInt(buf[0]);
             divisor   = Integer.parseInt(buf[1]);
             result    = numerator / divisor;
@@ -30,7 +30,7 @@ class MyInputReader
         }
         catch(RuntimeException e) 
         //catch(ArithmeticException | ArrayIndexOutOfBoundsException e)
-        //catch(ArithmeticException | RuntimeException e)    
+        //catch(ArithmeticException | RuntimeException e)  // this is not allowed because ArithmeticException is child class of RuntimeException
         {   
             System.out.println(e + " --> skip");
             result = 0; 
@@ -55,7 +55,7 @@ class MyInputReader
         }
         catch (FileNotFoundException e) 
         {
-            System.out.println(e);
+            System.out.println(e); // try failed = print message
         }
         finally 
         {
@@ -67,6 +67,7 @@ class MyInputReader
     
     public void newTry_openFileOnce() 
     {
+        //his is call try with resources, try(resources) {....}
         try (
             // ----- (2) declare fileScan in resource declaration of try-block
             //           it can be used only in try-block & close automatically
@@ -120,11 +121,11 @@ public class w5_6_TryResource
     public static void main(String[] args) 
     {
         String path     = "src/main/Java/Lab_Ch5/";
-        String [] files = {"correctone.txt", "correctzero.txt", "wrong.txt"};
+        String [] files = {"correctone.txt", "correctzero.txt", "wrong.txt"}; //wrong.txt does not exist
         
         MyInputReader calc = new MyInputReader( path, files[2] );
-        calc.oldTry_openFileOnce();
+        //calc.oldTry_openFileOnce();
         //calc.newTry_openFileOnce();
-        //calc.newTry_openFileLoop();
+        calc.newTry_openFileLoop();
     }    
 }

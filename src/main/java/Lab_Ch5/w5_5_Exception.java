@@ -51,7 +51,7 @@ class Dog4 extends AnimalAbstract4
     @Override
     public void fly(String from, String to) throws WingException
     { 
-	throw new WingException("Flying is not allowed for dog");
+	    throw new WingException("Flying is not allowed for dog");
     }
 };
 
@@ -72,7 +72,7 @@ class Bird4 extends AnimalAbstract4
 /////////////////////////////////////////////////////////////////////////////////////////////
 class w5_5_Exception
 {
-    public static void main(String[] args)    //throws WingException, FoodException
+    public static void main(String[] args) throws WingException, FoodException
     {
 	Dog4 lassie  = new Dog4("Lassie");
 	Dog4 scooby  = new Dog4("Scooby");
@@ -82,27 +82,27 @@ class w5_5_Exception
 	//           - try throwing exception to JVM
 	//           - how to make both fly() and eat(...) be called ?
 	System.out.println("\n\n----- Test exception -----\n");
-	//lassie.fly("Manchester", "London");
-	//lassie.eat(scooby);
+	lassie.fly("Manchester", "London");
+	lassie.eat(scooby);
 		
         
 	try
 	{
-            lassie.fly("Manchester", "London");
-            //lassie.eat(scooby);
-        }
+        lassie.fly("Manchester", "London");
+        lassie.eat(scooby);
+    }
 	catch (WingException e) { e.printStackTrace(); System.out.println(); }
 	//catch (FoodException e) { System.out.println(e); }
         
 
-        
+
 	try
 	{
             lassie.eat(scooby);
         }
-	catch (FoodException e) { System.out.println(e); }    
-        //catch (FoodException e) { System.out.println(e.getClass().getName()); } 
-        
+	//catch (FoodException e) { System.out.println(e); }
+    catch (FoodException e) { System.out.println(e.getClass().getName()); }
+
 
 	System.out.println("\n\n----- End -----");
     }

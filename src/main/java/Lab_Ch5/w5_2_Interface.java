@@ -79,7 +79,7 @@ class w5_2_Interface
     public static void main(String[] args) 
     {
         w5_2_Interface mainApp = new w5_2_Interface();
-        //mainApp.testPolymorphismViaClass();
+        mainApp.testPolymorphismViaClass();
         //mainApp.testPolymorphismViaInterface();
     }
     
@@ -92,7 +92,7 @@ class w5_2_Interface
 	A[1] = new Bird("Parrot", true);
 	A[2] = new Bird("Penquin", false);
 	for (int i=0; i < A.length; i++) A[i].fly("Manchester", "London");
-        //for (AnimalAbstract a : A) a.fly("Manchester", "London");     
+        for (AnimalAbstract a : A) a.fly("Manchester", "London");
         
         System.out.println();
     }
