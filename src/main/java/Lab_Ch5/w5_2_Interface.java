@@ -19,12 +19,12 @@ abstract class AnimalAbstract implements Flyer, Swimmer
     public int	    getLegs()				{ return legs; }
     public boolean  canFly()                            { return flyable; }
 
-    public void eat(AnimalAbstract food)		{ }
-    public void walk(String from, String to)            { }
+    public void eat(AnimalAbstract food) { }
+    public void walk(String from, String to) { }
     @Override
-    public void fly(String from, String to)		{ }
+    public void fly(String from, String to) { }
     @Override
-    public void swim(String from, String to)            { }
+    public void swim(String from, String to) { }
 };
 
 /////////////////////////////////////////////////////////////////////////////////////////////
@@ -52,8 +52,8 @@ class Bird extends AnimalAbstract
     @Override
     public void fly(String from, String to)
     { 
-	if (canFly()) System.out.printf("%s flies from %s to %s \n", getName(), from, to);
-	else          System.out.printf("%s cannot fly \n", getName());
+        if (canFly()) System.out.printf("%s flies from %s to %s \n", getName(), from, to);
+        else          System.out.printf("%s cannot fly \n", getName());
     }
 };
 
@@ -69,9 +69,9 @@ class Plane implements Flyer
     @Override
     public void fly(String from, String to)		
     { 
-	System.out.printf("%s takes off from %s, bound for %s \n", getName(), from, to); 
+	    System.out.printf("%s takes off from %s, bound for %s \n", getName(), from, to);
     }
-};
+}
 
 /////////////////////////////////////////////////////////////////////////////////////////////
 class w5_2_Interface
@@ -85,16 +85,15 @@ class w5_2_Interface
     
     public void testPolymorphismViaClass()
     {
-	// ----- (3) polymorphism via class
-	System.out.println("\n\n--- polymorphism via class ---");
-	AnimalAbstract[] A = new AnimalAbstract[3];
-	A[0] = new Dog("Lassie");
-	A[1] = new Bird("Parrot", true);
-	A[2] = new Bird("Penquin", false);
-	for (int i=0; i < A.length; i++) A[i].fly("Manchester", "London");
-        for (AnimalAbstract a : A) a.fly("Manchester", "London");
-        
-        System.out.println();
+        // ----- (3) polymorphism via class
+        System.out.println("\n\n--- polymorphism via class ---");
+        AnimalAbstract[] A = new AnimalAbstract[3];
+        A[0] = new Dog("Lassie");
+        A[1] = new Bird("Parrot", true);
+        A[2] = new Bird("Penquin", false);
+        for (int i=0; i < A.length; i++) A[i].fly("Manchester", "London");
+            for (AnimalAbstract a : A) a.fly("Manchester", "London");
+            System.out.println();
     }
     
     public void testPolymorphismViaInterface()
@@ -104,7 +103,8 @@ class w5_2_Interface
 	Flyer[] F = new Flyer[2];
 	F[0] = new Bird("Pigeon", true);
 	F[1] = new Plane("British Midland");
-	for (int i=0; i < F.length; i++) F[i].fly("Manchester", "London");
+	for (int i=0; i < F.length; i++)
+        F[i].fly("Manchester", "London");
         //for(Flyer f : F) f.fly("Manchester", "London");    
         
         System.out.println();

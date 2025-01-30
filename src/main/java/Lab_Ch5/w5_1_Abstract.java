@@ -33,7 +33,7 @@ class Dog1 extends AnimalAbstract1
     @Override
     public void walk(String from, String to)		
     { 
-	System.out.printf("%s walks with %d legs from %s \n", getName(), getLegs(), from); 
+	    System.out.printf("%s walks with %d legs from %s \n", getName(), getLegs(), from);
     }
     
     //@Override
@@ -60,7 +60,7 @@ class Bird1 extends AnimalAbstract1
     @Override
     public void walk(String from, String to)		
     { 
-	System.out.printf("%s walks with %d legs to %s \n", getName(), getLegs(), to); 
+	    System.out.printf("%s walks with %d legs to %s \n", getName(), getLegs(), to);
     }
 
     //@Override
@@ -74,23 +74,23 @@ class w5_1_Abstract
 {
     public static void main(String[] args) 
     {
-	// ----- (1) using abstract class as reference var & object
-	AnimalAbstract1[] A = new AnimalAbstract1[3];
-	//A[0] = new AnimalAbstract1(4, false);
-	A[0] = new Dog1("Lassie");
-	A[1] = new Bird1("Parrot", true);
-	A[2] = new Bird1("Penquin", false);
+        // ----- (1) using abstract class as reference var & object
+        AnimalAbstract1[] A = new AnimalAbstract1[3];
+        //A[0] = new AnimalAbstract1(4, false);
+        A[0] = new Dog1("Lassie");
+        A[1] = new Bird1("Parrot", true);
+        A[2] = new Bird1("Penquin", false);
 
-	A[0].eat(A[1]);
-	System.out.println();
+        A[0].eat(A[1]);
+        System.out.println();
 
-	// ----- (2) polymorphism
+        // ----- (2) polymorphism
         System.out.println("\n\n--- polymorphism via class ---");
-	for (int i=0; i < A.length; i++)
-	{
+        for (int i=0; i < A.length; i++)
+        {
             A[i].walk("Manchester", "London");
             A[i].fly("Manchester", "London");
             System.out.println();
-	}
+        }
     }
 }
