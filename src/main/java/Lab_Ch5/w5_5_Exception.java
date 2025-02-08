@@ -85,7 +85,7 @@ class w5_5_Exception
 	lassie.fly("Manchester", "London");
 	lassie.eat(scooby);
 		
-        
+    /*
 	try
 	{
         lassie.fly("Manchester", "London");
@@ -93,13 +93,14 @@ class w5_5_Exception
     }
 	catch (WingException e) { e.printStackTrace(); System.out.println(); }
 	//catch (FoodException e) { System.out.println(e); }
-        
 
+     */
 
 	try
 	{
-            lassie.eat(scooby);
-        }
+        lassie.fly("Manchester", "London");
+        lassie.eat(scooby);
+    }
 	//catch (FoodException e) { System.out.println(e); }
     catch (FoodException e) { System.out.println(e.getClass().getName()); }
 
