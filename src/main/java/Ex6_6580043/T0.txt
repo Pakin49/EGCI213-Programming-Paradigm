@@ -1,0 +1,8 @@
+Round   0  [  Q of Spades   ,  2 of Diamonds ,  J of Spades   ,  2 of Spades   ]
+
+Round   1  [  8 of Spades   ,  7 of Diamonds ,  5 of Hearts   ,  6 of Hearts   ]
+
+Round   2  [  7 of Spades   , 10 of Clubs    ,  8 of Spades   ,  9 of Spades   ]
+
+Round   3  [  J of Diamonds ,  4 of Diamonds ,  K of Diamonds ,  3 of Diamonds ]
+
