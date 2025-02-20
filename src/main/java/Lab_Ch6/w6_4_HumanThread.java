@@ -53,7 +53,7 @@ class w6_4_HumanThread
 	Thread tbody  = new Thread( new MySoul("TSoul"), "Thread" ); 
 	MyBody mbody  = new MyBody( new MySoul("MSoul"), "MyBody" );
 	HerBody hbody = new HerBody( new MySoul("HSoul"), "HerBody" );
-        
+
         tbody.start();  mbody.start();  hbody.start();
     }
 }
