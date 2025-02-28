@@ -128,12 +128,12 @@ class w7_3_Monitor
 
         
 	// ---- (4) barrier synchronization
-	/*
+
         MyBarrier finish = new MyBarrier();
         P1.setMyBarrier( finish );
         C1.setMyBarrier( finish );
         C2.setMyBarrier( finish );
-	*/
+
 
 	/*
 	CyclicBarrier finish = new CyclicBarrier(3);
