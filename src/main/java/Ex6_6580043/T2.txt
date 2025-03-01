@@ -1,0 +1,248 @@
+Round   0  [  5 of Spades   ,  9 of Diamonds ,  8 of Hearts   ,  4 of Clubs    ]
+
+Round   1  [  6 of Hearts   ,  4 of Spades   ,  Q of Hearts   , 10 of Spades   ]
+
+Round   2  [  J of Spades   ,  K of Hearts   ,  7 of Hearts   ,  Q of Spades   ]
+
+Round   3  [  K of Hearts   ,  2 of Hearts   ,  9 of Hearts   ,  5 of Spades   ]
+
+Round   4  [  J of Diamonds ,  5 of Hearts   ,  A of Spades   ,  4 of Spades   ]
+
+Round   5  [  2 of Hearts   ,  9 of Diamonds ,  J of Spades   ,  5 of Hearts   ]
+
+Round   6  [ 10 of Diamonds , 10 of Hearts   ,  5 of Hearts   ,  A of Diamonds ]
+
+Round   7  [ 10 of Hearts   ,  6 of Hearts   ,  6 of Diamonds ,  5 of Diamonds ]
+
+Round   8  [  J of Hearts   ,  J of Clubs    ,  3 of Spades   , 10 of Diamonds ]
+
+Round   9  [  8 of Clubs    ,  7 of Clubs    ,  8 of Diamonds ,  6 of Clubs    ]
+
+Round  10  [  5 of Diamonds ,  8 of Diamonds ,  J of Clubs    ,  7 of Spades   ]
+
+Round  11  [  7 of Diamonds ,  2 of Diamonds ,  5 of Spades   ,  A of Diamonds ]
+
+Round  12  [  9 of Clubs    ,  9 of Spades   ,  4 of Clubs    ,  3 of Hearts   ]
+
+Round  13  [  K of Spades   ,  7 of Hearts   ,  J of Spades   ,  J of Hearts   ]
+
+Round  14  [  K of Spades   ,  6 of Hearts   ,  2 of Spades   ,  5 of Spades   ]
+
+Round  15  [  7 of Clubs    ,  K of Diamonds , 10 of Spades   ,  3 of Hearts   ]
+
+Round  16  [  2 of Hearts   ,  K of Hearts   ,  4 of Clubs    ,  J of Spades   ]
+
+Round  17  [  2 of Diamonds ,  K of Spades   , 10 of Clubs    ,  4 of Hearts   ]
+
+Round  18  [  J of Spades   ,  7 of Diamonds ,  A of Hearts   ,  5 of Diamonds ]
+
+Round  19  [  K of Spades   ,  5 of Diamonds , 10 of Spades   ,  6 of Spades   ]
+
+Round  20  [  Q of Clubs    ,  4 of Clubs    ,  9 of Diamonds ,  9 of Hearts   ]
+
+Round  21  [  7 of Clubs    ,  J of Clubs    ,  8 of Hearts   ,  4 of Hearts   ]
+
+Round  22  [  7 of Clubs    ,  5 of Diamonds ,  4 of Diamonds ,  A of Diamonds ]
+
+Round  23  [  9 of Hearts   ,  3 of Diamonds ,  K of Hearts   ,  4 of Diamonds ]
+
+Round  24  [  7 of Spades   ,  K of Spades   ,  4 of Diamonds ,  3 of Clubs    ]
+
+Round  25  [  8 of Diamonds ,  7 of Hearts   ,  3 of Hearts   ,  J of Diamonds ]
+
+Round  26  [  4 of Clubs    , 10 of Clubs    ,  5 of Hearts   ,  J of Clubs    ]
+
+Round  27  [  9 of Diamonds ,  4 of Diamonds , 10 of Hearts   ,  K of Spades   ]
+
+Round  28  [  3 of Diamonds ,  3 of Clubs    ,  8 of Hearts   , 10 of Spades   ]
+
+Round  29  [  K of Spades   ,  5 of Hearts   ,  3 of Diamonds ,  A of Diamonds ]
+
+Round  30  [  4 of Spades   ,  2 of Clubs    ,  5 of Hearts   ,  5 of Spades   ]
+
+Round  31  [  5 of Diamonds ,  5 of Hearts   ,  Q of Hearts   ,  7 of Clubs    ]
+
+Round  32  [  4 of Clubs    ,  J of Clubs    ,  3 of Hearts   ,  9 of Clubs    ]
+
+Round  33  [  A of Hearts   ,  J of Hearts   ,  6 of Spades   ,  8 of Hearts   ]
+
+Round  34  [  Q of Spades   ,  J of Spades   ,  K of Hearts   ,  9 of Spades   ]
+
+Round  35  [ 10 of Clubs    ,  3 of Spades   ,  7 of Clubs    ,  J of Diamonds ]
+
+Round  36  [  3 of Clubs    ,  5 of Spades   ,  9 of Hearts   ,  K of Spades   ]
+
+Round  37  [  9 of Clubs    ,  4 of Diamonds ,  6 of Hearts   ,  2 of Clubs    ]
+
+Round  38  [  K of Diamonds , 10 of Diamonds ,  K of Clubs    ,  2 of Hearts   ]
+
+Round  39  [  J of Diamonds , 10 of Diamonds ,  5 of Hearts   ,  3 of Clubs    ]
+
+Round  40  [  A of Clubs    ,  8 of Spades   ,  9 of Hearts   ,  8 of Hearts   ]
+
+Round  41  [  J of Clubs    ,  3 of Clubs    ,  A of Diamonds ,  Q of Diamonds ]
+
+Round  42  [  7 of Hearts   ,  A of Diamonds ,  9 of Clubs    ,  A of Hearts   ]
+
+Round  43  [  3 of Clubs    ,  9 of Diamonds ,  6 of Spades   ,  7 of Hearts   ]
+
+Round  44  [ 10 of Hearts   ,  Q of Spades   ,  6 of Clubs    ,  5 of Diamonds ]
+
+Round  45  [  J of Diamonds ,  7 of Spades   ,  6 of Hearts   ,  4 of Spades   ]
+
+Round  46  [  7 of Diamonds ,  5 of Spades   ,  8 of Diamonds ,  5 of Hearts   ]
+
+Round  47  [  9 of Clubs    ,  8 of Diamonds ,  4 of Spades   ,  K of Diamonds ]
+
+Round  48  [  J of Spades   ,  Q of Diamonds ,  8 of Hearts   ,  J of Hearts   ]
+
+Round  49  [ 10 of Diamonds ,  5 of Clubs    ,  7 of Clubs    ,  7 of Hearts   ]
+
+Round  50  [  3 of Spades   ,  8 of Hearts   ,  Q of Diamonds ,  7 of Hearts   ]
+
+Round  51  [  9 of Diamonds ,  3 of Hearts   ,  6 of Clubs    ,  K of Diamonds ]
+
+Round  52  [  6 of Hearts   ,  8 of Hearts   ,  7 of Hearts   ,  K of Spades   ]
+
+Round  53  [ 10 of Hearts   ,  K of Spades   ,  9 of Clubs    ,  Q of Spades   ]
+
+Round  54  [  5 of Hearts   ,  4 of Hearts   ,  Q of Diamonds ,  9 of Clubs    ]
+
+Round  55  [  5 of Clubs    ,  8 of Hearts   ,  K of Diamonds ,  A of Diamonds ]
+
+Round  56  [  6 of Spades   ,  5 of Spades   ,  Q of Hearts   ,  9 of Diamonds ]
+
+Round  57  [  3 of Diamonds ,  A of Clubs    ,  Q of Diamonds ,  6 of Spades   ]
+
+Round  58  [  2 of Spades   , 10 of Spades   ,  J of Hearts   , 10 of Diamonds ]
+
+Round  59  [  7 of Spades   ,  2 of Hearts   ,  3 of Diamonds ,  3 of Clubs    ]
+
+Round  60  [  Q of Clubs    ,  J of Hearts   ,  J of Diamonds , 10 of Clubs    ]
+
+Round  61  [  J of Clubs    ,  A of Spades   ,  J of Diamonds ,  5 of Clubs    ]
+
+Round  62  [  2 of Spades   ,  A of Hearts   ,  6 of Spades   ,  5 of Clubs    ]
+
+Round  63  [  6 of Hearts   ,  Q of Clubs    ,  5 of Hearts   , 10 of Hearts   ]
+
+Round  64  [  9 of Clubs    ,  K of Spades   ,  8 of Spades   ,  3 of Hearts   ]
+
+Round  65  [  J of Spades   ,  Q of Diamonds ,  3 of Hearts   ,  6 of Clubs    ]
+
+Round  66  [  8 of Spades   ,  6 of Spades   ,  K of Hearts   ,  J of Spades   ]
+
+Round  67  [  9 of Hearts   ,  2 of Spades   ,  8 of Diamonds ,  J of Diamonds ]
+
+Round  68  [  2 of Hearts   ,  J of Hearts   ,  5 of Hearts   ,  J of Spades   ]
+
+Round  69  [  K of Hearts   ,  K of Clubs    ,  7 of Spades   ,  8 of Hearts   ]
+
+Round  70  [  6 of Diamonds ,  5 of Hearts   ,  2 of Diamonds ,  Q of Hearts   ]
+
+Round  71  [  3 of Diamonds ,  7 of Hearts   ,  J of Spades   ,  J of Diamonds ]
+
+Round  72  [  Q of Clubs    ,  5 of Diamonds , 10 of Clubs    ,  6 of Diamonds ]
+
+Round  73  [  K of Diamonds ,  4 of Clubs    ,  5 of Clubs    ,  A of Spades   ]
+
+Round  74  [  9 of Hearts   ,  3 of Hearts   ,  7 of Clubs    ,  5 of Diamonds ]
+
+Round  75  [  3 of Spades   ,  9 of Clubs    ,  5 of Hearts   ,  8 of Diamonds ]
+
+Round  76  [  8 of Hearts   ,  3 of Spades   ,  6 of Spades   ,  8 of Clubs    ]
+
+Round  77  [  J of Clubs    ,  Q of Clubs    ,  4 of Clubs    ,  8 of Spades   ]
+
+Round  78  [  3 of Hearts   ,  K of Clubs    ,  9 of Diamonds , 10 of Clubs    ]
+
+Round  79  [  8 of Clubs    ,  K of Hearts   ,  5 of Spades   ,  Q of Clubs    ]
+
+Round  80  [  J of Clubs    ,  8 of Diamonds ,  6 of Spades   ,  Q of Spades   ]
+
+Round  81  [  J of Clubs    ,  A of Spades   ,  9 of Clubs    ,  8 of Clubs    ]
+
+Round  82  [  K of Hearts   ,  7 of Spades   ,  K of Diamonds ,  5 of Diamonds ]
+
+Round  83  [  8 of Spades   ,  K of Clubs    ,  J of Spades   ,  4 of Hearts   ]
+
+Round  84  [  Q of Clubs    ,  6 of Spades   ,  Q of Spades   ,  4 of Clubs    ]
+
+Round  85  [  4 of Diamonds ,  K of Spades   ,  7 of Hearts   ,  3 of Clubs    ]
+
+Round  86  [ 10 of Diamonds ,  2 of Hearts   , 10 of Clubs    ,  7 of Diamonds ]
+
+Round  87  [  3 of Clubs    ,  Q of Clubs    ,  5 of Diamonds ,  4 of Hearts   ]
+
+Round  88  [  5 of Hearts   ,  A of Spades   ,  Q of Spades   ,  A of Hearts   ]
+
+Round  89  [  K of Clubs    ,  3 of Hearts   , 10 of Diamonds ,  2 of Hearts   ]
+
+Round  90  [  K of Diamonds ,  9 of Clubs    ,  6 of Spades   ,  7 of Hearts   ]
+
+Round  91  [  4 of Diamonds ,  4 of Spades   ,  5 of Diamonds ,  K of Diamonds ]
+
+Round  92  [  J of Clubs    ,  2 of Diamonds ,  K of Hearts   ,  A of Clubs    ]
+
+Round  93  [  J of Spades   ,  5 of Clubs    ,  2 of Clubs    ,  7 of Diamonds ]
+
+Round  94  [  3 of Hearts   ,  3 of Diamonds ,  J of Spades   ,  4 of Diamonds ]
+
+Round  95  [  Q of Clubs    ,  A of Diamonds ,  5 of Diamonds ,  J of Spades   ]
+
+Round  96  [  8 of Hearts   ,  8 of Diamonds ,  J of Diamonds ,  4 of Spades   ]
+
+Round  97  [  7 of Clubs    ,  Q of Diamonds ,  5 of Spades   ,  8 of Diamonds ]
+
+Round  98  [  4 of Hearts   ,  A of Spades   , 10 of Clubs    ,  6 of Hearts   ]
+
+Round  99  [  6 of Hearts   ,  J of Clubs    ,  2 of Diamonds ,  2 of Clubs    ]
+
+Round 100  [ 10 of Diamonds , 10 of Hearts   ,  6 of Diamonds ,  8 of Clubs    ]
+
+Round 101  [  A of Hearts   ,  Q of Spades   ,  J of Clubs    ,  3 of Spades   ]
+
+Round 102  [  2 of Clubs    ,  J of Hearts   ,  6 of Hearts   ,  3 of Clubs    ]
+
+Round 103  [  8 of Hearts   ,  2 of Hearts   ,  7 of Diamonds ,  4 of Hearts   ]
+
+Round 104  [ 10 of Spades   ,  8 of Hearts   ,  Q of Diamonds ,  3 of Diamonds ]
+
+Round 105  [  6 of Hearts   ,  J of Spades   ,  9 of Hearts   , 10 of Diamonds ]
+
+Round 106  [  5 of Diamonds ,  J of Hearts   ,  Q of Diamonds ,  Q of Hearts   ]
+
+Round 107  [  6 of Spades   ,  Q of Clubs    ,  3 of Spades   ,  3 of Hearts   ]
+
+Round 108  [  J of Clubs    ,  Q of Diamonds ,  K of Clubs    , 10 of Clubs    ]
+
+Round 109  [  J of Clubs    ,  A of Diamonds ,  6 of Clubs    ,  A of Hearts   ]
+
+Round 110  [  J of Diamonds , 10 of Clubs    ,  A of Diamonds ,  5 of Spades   ]
+
+Round 111  [  K of Spades   ,  5 of Diamonds ,  8 of Hearts   ,  2 of Hearts   ]
+
+Round 112  [  4 of Clubs    ,  9 of Clubs    ,  K of Hearts   ,  4 of Diamonds ]
+
+Round 113  [  J of Spades   ,  8 of Spades   ,  J of Hearts   , 10 of Spades   ]
+
+Round 114  [  A of Hearts   ,  2 of Hearts   ,  9 of Clubs    ,  7 of Spades   ]
+
+Round 115  [  7 of Clubs    ,  K of Hearts   ,  8 of Hearts   ,  6 of Hearts   ]
+
+Round 116  [  9 of Clubs    ,  3 of Spades   ,  K of Diamonds ,  6 of Spades   ]
+
+Round 117  [  Q of Diamonds ,  9 of Diamonds ,  3 of Clubs    ,  7 of Diamonds ]
+
+Round 118  [  4 of Spades   ,  9 of Diamonds ,  A of Hearts   ,  6 of Spades   ]
+
+Round 119  [  4 of Hearts   ,  9 of Spades   ,  3 of Hearts   , 10 of Spades   ]
+
+Round 120  [  J of Diamonds ,  8 of Clubs    ,  A of Hearts   ,  3 of Hearts   ]
+
+Round 121  [  A of Spades   ,  6 of Hearts   ,  4 of Diamonds ,  8 of Spades   ]
+
+Round 122  [  5 of Diamonds ,  Q of Hearts   ,  6 of Clubs    ,  7 of Diamonds ]
+
+Round 123  [  6 of Clubs    , 10 of Clubs    ,  9 of Clubs    ,  K of Clubs    ]
+
