@@ -58,7 +58,6 @@ class BankThread extends Thread
                         sharedAccount.withdraw(head); // withdraw threads withdraw
                     }
                     barrier.await(); // wait for every round
-
                 }
 
             } catch (InterruptedException | BrokenBarrierException e) { }
@@ -98,7 +97,7 @@ class Account {
         }
         //if balance < withdraw or balance = 0
         else{
-            System.out.printf("%s  cannot withdraw\n",this.name); //report
+            System.out.printf(h+"%s  cannot withdraw\n",this.name); //report
         }
     }
 }
@@ -142,6 +141,7 @@ public class Ex7 {
             for(int i = 0; i< round;i++){
                 barrier.await(); // #4 all threads finish each rounds of withdraw/deposit
             }
+            System.out.println();
         }
         // If user doesn't want to run a new simulation:
 
