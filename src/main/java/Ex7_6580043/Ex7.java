@@ -123,11 +123,22 @@ public class Ex7 {
         simulation_init(); // setup threads, account, exchanger, cyclic barrier
         for (BankThread B : allThreads) { B.start(); } // Start all BankThreads
 
+        Scanner keyscan = new Scanner(System.in);
         while(true){
             // (1) get number of simulation round from user
-            Scanner keyscan = new Scanner(System.in);
-            System.out.printf("%4s >> Enter #rounds for a new simulation (-1 to quit)\n", Thread.currentThread().getName());
-            int round = keyscan.nextInt(); keyscan.nextLine();
+            int round = -1;
+            boolean wrong_format = true; // if
+            while(wrong_format){
+                try {
+                    System.out.printf("%4s >> Enter #rounds for a new simulation (-1 to quit)\n", Thread.currentThread().getName());
+                    round = keyscan.nextInt();
+                    keyscan.nextLine();
+                    if(round < -1){
+                        throw new RuntimeException();
+                    }
+                    wrong_format = false;
+                }catch (RuntimeException re){ System.err.println("Invalid input!"); keyscan.nextLine();}
+            }
             if ( round == -1 ) { break;} // if round = -1 finish the simulation
 
             // set round for simulation to every thread
