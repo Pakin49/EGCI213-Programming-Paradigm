@@ -26,11 +26,13 @@ class BankThread extends Thread
     @Override
     public void run(){
         // Loop for banking simulation. In each simulation:
-        while(BankThread.running) {
+        while(true) {
             try {
                 //  (1) Wait for round from main thread
                 barrier.await();
-
+                if(!BankThread.running) {
+                    break; // if round = -1 halt
+                }
                 //  (2) Deposit exchange
                 if(first){ first = false;} // clear first flag --> next time Deposit thread exchange
                 else{
@@ -79,7 +81,7 @@ class Account {
         Random random = new Random();
         int rand_int = random.nextInt(101); // Random money (1 to 100) to deposit
         this.balance += rand_int; // update balance
-        System.out.printf(h+"%s %+4d  balance = %d \n",this.name,rand_int, this.balance); // report
+        System.out.printf(h+"%s %+4d  balance =%4d \n",this.name,rand_int, this.balance); // report
 
     }
     
@@ -92,7 +94,7 @@ class Account {
             //if enough money
             if (rand_int <= this.balance) {
                 this.balance -= rand_int;    // update the balance
-                System.out.printf(h+"%s %+4d  balance = %d \n", this.name, rand_int, this.balance); // report
+                System.out.printf(h+"%s %+4d  balance =%4d \n", this.name, rand_int, this.balance); // report
             }
         }
         //if balance < withdraw or balance = 0
@@ -125,9 +127,8 @@ public class Ex7 {
             // (1) get number of simulation round from user
             Scanner keyscan = new Scanner(System.in);
             System.out.printf("%4s >> Enter #rounds for a new simulation (-1 to quit)\n", Thread.currentThread().getName());
-            int round = keyscan.nextInt();
+            int round = keyscan.nextInt(); keyscan.nextLine();
             if ( round == -1 ) { break;} // if round = -1 finish the simulation
-            keyscan.nextLine();
 
             // set round for simulation to every thread
             for ( BankThread B : allThreads){
@@ -146,11 +147,14 @@ public class Ex7 {
         // If user doesn't want to run a new simulation:
 
         BankThread.stop_running();
+        barrier.await(); // release others thread to finished
         for(BankThread B : allThreads){
             B.join();
         }
-            //   - Wait until all BankThreads return
-            //   - Main thread reports final balances of all accounts
+        for(Account account : accounts){
+            System.out.printf("%s >> final balance   %s = %d\n",Thread.currentThread().getName(),account.getName(),account.getBalance());
+        }
+        //   - Main thread reports final balances of all accounts
     }
 
     void simulation_init(){
