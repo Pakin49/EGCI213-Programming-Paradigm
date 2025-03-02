@@ -58,7 +58,6 @@ public class w7_5_Exchanger
         w7_5_Exchanger mainApp = new w7_5_Exchanger();
         mainApp.testExchange();
     }
-    
     public void testExchange() 
     {
         Exchanger<Value> exchanger = new Exchanger<Value>(); 
