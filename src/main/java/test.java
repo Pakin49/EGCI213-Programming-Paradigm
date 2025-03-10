@@ -1,16 +1,18 @@
+import java.util.*;
+
 
 public class test {
-    public static void main(String[] args) {
-        Thread T1 = new Thread( new test_runnable(), "HW_thread");
+    public static void main( String args[]){
+        T
     }
 }
 
-class test_runnable implements Runnable{
+public class GUI implemnts Runnable(){
+private int thread
+id;
 
+public void run() {
+    System.out.printf();
+}
 
-    @Override
-    public void run(){
-        System.out.printf("Thread : %s, class : %s --> ",Thread.currentThread().getName(),getClass());
-        System.out.println("Hello world");
-    }
 }
