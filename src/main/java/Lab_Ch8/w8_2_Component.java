@@ -25,7 +25,7 @@ class w8_2_Component extends JFrame
 	for (int i=0; i < 10; i++) items[i] = " --- item " + i + " ---";
 
 	JLabel  label   = new JLabel("Label in the North");
-        label.setFont(new Font("Monospaced", Font.PLAIN, 20));
+	label.setFont(new Font("Monospaced", Font.PLAIN, 20));
         
 	JButton button1 = new JButton("Click South A");
 	JButton button2 = new JButton("Click South B");
@@ -33,25 +33,20 @@ class w8_2_Component extends JFrame
 	JPanel cregion = new JPanel();
 	cregion.setBackground( Color.CYAN );
 
-        
 	// ----- (3) add components to container
-	// notice 2 buttons in the south
+	// notice 2 buttons in the south is overlapping
 	contentpane.add(label, BorderLayout.NORTH);
 	contentpane.add(cregion, BorderLayout.CENTER);
-	contentpane.add(button1, BorderLayout.SOUTH);
-	contentpane.add(button2, BorderLayout.SOUTH);
-	
+	//contentpane.add(button1, BorderLayout.SOUTH);
+	//contentpane.add(button2, BorderLayout.SOUTH);
 
-	/*
 	JPanel southPanel = new JPanel();
+	southPanel.add(button1);
 	southPanel.add(button2);
-	southPanel.add(button3);
 	contentpane.add(southPanel, BorderLayout.SOUTH);
-	*/
-
 
 	// ----- (5) set cursor to other formats
-	//button1.setCursor( new Cursor(Cursor.MOVE_CURSOR) );
+	button1.setCursor( new Cursor(Cursor.MOVE_CURSOR) );
 
 
 	// ----- (6) add text field, password field, text area
@@ -69,7 +64,6 @@ class w8_2_Component extends JFrame
 	JScrollPane tsc = new JScrollPane(ta);
     tsc.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
 	cregion.add(tsc);
-
 
 	// ----- (7) add check box, radio button
         //           try different GridLayout

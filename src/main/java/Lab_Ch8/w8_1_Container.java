@@ -18,13 +18,16 @@ class w8_1_Container
 	// - which one doesn't work ?
 	// - notice the difference between EXIT_ON_CLOSE and DISPOSE_ON_CLOSE
 
+	/*
     frame.setMaximizedBounds( new Rectangle(800, 500) ); // Can only maximize to this size
 	frame.setResizable(true);
 	frame.getContentPane().setBackground( new Color(100, 150, 250) ); // when set the frame colour it does nothing because it is behind the content pain
 	//frame.setBackground( Color.BLUE );
 	frame.setCursor( new Cursor(Cursor.WAIT_CURSOR) );
 	frame.setDefaultCloseOperation( WindowConstants.EXIT_ON_CLOSE );
-        
+	*/
+
+
     frame.getContentPane().setLayout(new FlowLayout());
     frame.getContentPane().add( new JTextField("type anything", 20) );
     // add text later make it does not show on the screen
@@ -42,8 +45,8 @@ class w8_1_Container
 
 
 	// ----- (3) Dialog
-	//           - notice the difference between dialog with and without owner
-	//           - notice the difference between modal and non-modal dialogs
+    // - notice the difference between dialog with and without owner
+    // - notice the difference between modal and non-modal dialogs
     // dialog is top level container so need to set size and visibility
 	JDialog dialog = new JDialog(frame); // adding frame as argument make dialog belong to frame -> minimizing frame also minimize dialog
 	dialog.setTitle("This is a Dialog");
@@ -53,10 +56,9 @@ class w8_1_Container
 	dialog.setDefaultCloseOperation( WindowConstants.DISPOSE_ON_CLOSE );
 
 
-
 	// ----- (4) Quick dialog 
         //           - notice the difference between dialog with and without owner
-	/*
+
 	int op = JOptionPane.showConfirmDialog( null, 
 		 "Press the button", "This is a Confirm Dialog", 
 	         JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE );
@@ -64,6 +66,5 @@ class w8_1_Container
 	JOptionPane.showMessageDialog( frame, 
 		 ("Option  =  " + op), "This is a Message Dialog", 
 		 JOptionPane.INFORMATION_MESSAGE );
-	*/
     }
 }
