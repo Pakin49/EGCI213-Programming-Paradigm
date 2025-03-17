@@ -62,15 +62,15 @@ class w9_1_ComponentEvent extends JFrame
 
     public void AddListeners()
     {
-	// ----- (2) add ComponentListener to frame
-	//this.addComponentListener( new MyComponentListener() );
+        // ----- (2) add ComponentListener to frame
+        this.addComponentListener( new MyComponentListener() );
 
-	// ----- (3) add FocusListener to buttons and combo box
-	/*
-	button1.addFocusListener( new MyFocusListener() );
-	button2.addFocusListener( new MyFocusListener() );
-	combo.addFocusListener( new MyFocusListener() );
-	*/
+        // ----- (3) add FocusListener to buttons and combo box
+
+        button1.addFocusListener( new MyFocusListener() );
+        button2.addFocusListener( new MyFocusListener() );
+        combo.addFocusListener( new MyFocusListener() );
+
     }
 
     public static void main(String[] args) 

@@ -15,28 +15,28 @@ class w10_1_WinEvent_1 extends JFrame implements MouseListener
 
     public w10_1_WinEvent_1()
     {
-	setTitle("This is a Frame");
+	    setTitle("This is a Frame");
         setSize(700, 400);
         setLocationRelativeTo(null);
-	setVisible(true);
-	setDefaultCloseOperation( WindowConstants.EXIT_ON_CLOSE );
+	    setVisible(true);
+	    setDefaultCloseOperation( WindowConstants.EXIT_ON_CLOSE );
 
-	contentpane = (JPanel)getContentPane();
-	contentpane.setLayout( new FlowLayout() );
+	    contentpane = (JPanel)getContentPane();
+	    contentpane.setLayout( new FlowLayout() );
         contentpane.setBackground( Color.GRAY );
 
-	random = new java.util.Random();
+	    random = new java.util.Random();
 	
-	// ----- (2) add listeners : notice the difference between (2.1), (2.2), (2.3)
+        // ----- (2) add listeners : notice the difference between (2.1), (2.2), (2.3)
 
-	// ----- (2.1) click anywhere in the frame to add a random bird
-	addMouseListener( this );
+        // ----- (2.1) click anywhere in the frame to add a random bird
+        addMouseListener( this );
 
-	// ----- (2.2) for every 5 birds added, pop up a dialog
-	contentpane.addContainerListener( new MyContainerListener() );
+        // ----- (2.2) for every 5 birds added, pop up a dialog
+        contentpane.addContainerListener( new MyContainerListener() );
 
-	// ----- (2.3) count total no. of birds when closing the frame
-	addWindowListener( new MyWindowListener() );
+        // ----- (2.3) count total no. of birds when closing the frame
+        addWindowListener( new MyWindowListener() );
     }
 
     // ----- (1) handlers for MouseListener	
@@ -48,10 +48,10 @@ class w10_1_WinEvent_1 extends JFrame implements MouseListener
     @Override
     public void mouseClicked( MouseEvent e )	
     {
-	int r = random.nextInt(6);
-	JLabel label = new JLabel( new ImageIcon(path + birds[r]) );
-	contentpane.add( label );
-	//validate();
+        int r = random.nextInt(6);
+        JLabel label = new JLabel( new ImageIcon(path + birds[r]) );
+        contentpane.add( label );
+        validate();
     }
 	
 
@@ -67,8 +67,8 @@ class QuickDialog
 {
     public static void show(String message)
     {
-	JOptionPane.showMessageDialog(new JFrame(), message, "Quick Dialog",
-			              JOptionPane.INFORMATION_MESSAGE );
+        JOptionPane.showMessageDialog(new JFrame(), message, "Quick Dialog",
+                              JOptionPane.INFORMATION_MESSAGE );
     }
 };
 
@@ -78,20 +78,20 @@ class MyContainerListener extends ContainerAdapter
     @Override
     public void componentAdded( ContainerEvent e )
     {
-	e.getContainer().validate();
+        e.getContainer().validate();
 
-	int count = e.getContainer().getComponentCount();
-	if (count % 5 == 0) 
-	{
-            QuickDialog.show( count + " birds have been added" );
+        int count = e.getContainer().getComponentCount();
+        if (count % 5 == 0)
+        {
+                QuickDialog.show( count + " birds have been added" );
 
-            JLabel label = (JLabel)e.getChild();
-            label.setOpaque(true);
+                JLabel label = (JLabel)e.getChild(); // getChild() return component that is just added
+                label.setOpaque(true);
 
-            // ----- (3) last argument is transparency degree 
-            //           0 = transparent, 255 = opaque
-            //label.setBackground( new Color(0, 0, 100, 50) );
-	}
+                // ----- (3) last argument is transparency degree
+                //           0 = transparent, 255 = opaque
+                //label.setBackground( new Color(0, 0, 100, 50) );
+        }
     }
 };
 
@@ -104,14 +104,24 @@ class MyWindowListener extends WindowAdapter
 	QuickDialog.show("Click anywhere to add birds");
     }
 
+    /*windowClosing(WindowEvent e)
+
+    Triggered when the user requests to close the window (e.g., clicking the close button).
+    The window is still visible and open at this point.
+    You can override this method to prevent closing (e.g., showing a confirmation dialog).
+    windowClosed(WindowEvent e)
+
+    Triggered after the window has been closed and disposed of.
+    The window is no longer visible, and resources have been released.
+     */
     // ----- (4) what happens if we change to windowClosed(...) ?
     @Override
-    public void windowClosing( WindowEvent e )		
+    public void windowClosed( WindowEvent e )
     { 
-	JFrame frame = (JFrame)e.getWindow();
-	JPanel contentpane = (JPanel)frame.getContentPane();
+        JFrame frame = (JFrame)e.getWindow();
+        JPanel contentpane = (JPanel)frame.getContentPane();
 
-	int count = contentpane.getComponentCount();
-	QuickDialog.show("Total birds = " + count);
+        int count = contentpane.getComponentCount();
+        QuickDialog.show("Total birds = " + count);
     }
 };
